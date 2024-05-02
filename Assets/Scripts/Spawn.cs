@@ -11,11 +11,11 @@ public class Spawn : MonoBehaviour
     public Vector2 spawnAreaMin;
     public Vector2 spawnAreaMax;
 
-    public Text score;
+  
 
     void Start() {
 
-        score = ScoreText.GetComponent<Text>();
+  
 
     StartCoroutine(SpawnGameObjects());
     }
@@ -59,8 +59,5 @@ public class Spawn : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-       if(score >= 100){
-           StopCoroutine(SpawnGameObjects());
-       }
     }
 }
