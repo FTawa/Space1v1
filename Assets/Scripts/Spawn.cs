@@ -42,7 +42,7 @@ public class Spawn : MonoBehaviour
                 gameObjectToSpawn = gameObject3;
             }
 
-            float randomVelocity = Random.Range(3.0f, 15.0f);
+            float randomVelocity = Random.Range(-15.0f, 15.0f);
             gameObjectToSpawn.GetComponent<Rigidbody2D>().velocity = new Vector2(randomVelocity, randomVelocity);
 
             // Spawn the game object at the random position
