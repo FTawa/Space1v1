@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9094236335928550170}
   - component: {fileID: 9094236335928550165}
+  - component: {fileID: 3807252343811266256}
   m_Layer: 0
   m_Name: Event1Manager
   m_TagString: Untagged
@@ -50,3 +51,15 @@ MonoBehaviour:
   spawnArea: {fileID: 0}
   spawnAreaMin: {x: -100, y: -192}
   spawnAreaMax: {x: 100, y: 216}
+--- !u!114 &3807252343811266256
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9094236335928550164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a420cca70f4dd434cb988f5b5b1d8b5a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
