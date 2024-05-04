@@ -238,7 +238,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &78607057
@@ -468,7 +468,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &764997377
@@ -601,7 +601,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &791235139
@@ -737,7 +737,7 @@ SpriteRenderer:
   m_Size: {x: 1, y: 1}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!4 &1035713225
@@ -926,8 +926,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 11.2634, y: 13.326}
-  m_SizeDelta: {x: 1311.9268, y: 2709.852}
+  m_AnchoredPosition: {x: 11.2634, y: 15.2964}
+  m_SizeDelta: {x: 1311.9268, y: 2705.9116}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1001 &815519111403961479
 PrefabInstance:
@@ -1037,6 +1037,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 953726539524394633, guid: 2307445e1772d204281ea093cb824ad1, type: 3}
+      propertyPath: events.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 953726539524394633, guid: 2307445e1772d204281ea093cb824ad1, type: 3}
+      propertyPath: events.Array.data[1]
+      value: 
+      objectReference: {fileID: 9094236335928550164, guid: 1f4e70297144f0e4d8dfb399f9f54ef2, type: 3}
     - target: {fileID: 953726539524394634, guid: 2307445e1772d204281ea093cb824ad1, type: 3}
       propertyPath: m_Name
       value: EventsManager
@@ -1098,6 +1106,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Square
       objectReference: {fileID: 0}
+    - target: {fileID: 1114792626113867437, guid: 18a547b176d258243bd232817d497aeb, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 18a547b176d258243bd232817d497aeb, type: 3}
 --- !u!1001 &3997192169013126869
@@ -1107,6 +1119,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3997192170314306096, guid: af95fd37e867f8c478f395ee172b51d4, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
+    - target: {fileID: 3997192170314306096, guid: af95fd37e867f8c478f395ee172b51d4, type: 3}
+      propertyPath: m_WasSpriteAssigned
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3997192170314306097, guid: af95fd37e867f8c478f395ee172b51d4, type: 3}
       propertyPath: m_Name
       value: Circle
@@ -1154,6 +1174,14 @@ PrefabInstance:
     - target: {fileID: 3997192170314306099, guid: af95fd37e867f8c478f395ee172b51d4, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3997192170314306108, guid: af95fd37e867f8c478f395ee172b51d4, type: 3}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3997192170314306108, guid: af95fd37e867f8c478f395ee172b51d4, type: 3}
+      propertyPath: m_GravityScale
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: af95fd37e867f8c478f395ee172b51d4, type: 3}
@@ -1291,7 +1319,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7833308017935324839, guid: 25183a28c965b3d4f9833a4768dd3e8b, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 252.30002
+      value: 251.4
       objectReference: {fileID: 0}
     - target: {fileID: 7833308017935324839, guid: 25183a28c965b3d4f9833a4768dd3e8b, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
