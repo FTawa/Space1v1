@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 815519111177043970}
   - component: {fileID: 815519111177043968}
   - component: {fileID: 815519111177043969}
-  - component: {fileID: 815519111177043983}
+  - component: {fileID: 7172176567729938520}
   m_Layer: 0
   m_Name: Capsule (1)
   m_TagString: Untagged
@@ -124,18 +124,24 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
---- !u!114 &815519111177043983
-MonoBehaviour:
+--- !u!255 &7172176567729938520
+FixedJoint2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815519111177043972}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 70adf93e9d8e4de499dfd7d8a4299fe0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 815519111218597529}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: -0.56609315, y: 0}
+  m_DampingRatio: 0
+  m_Frequency: 0
 --- !u!1 &815519111218597531
 GameObject:
   m_ObjectHideFlags: 0
@@ -377,6 +383,7 @@ GameObject:
   - component: {fileID: 815519112671166553}
   - component: {fileID: 815519112671166554}
   - component: {fileID: 815519112671166555}
+  - component: {fileID: 5370493449886788178}
   m_Layer: 0
   m_Name: Capsule (2)
   m_TagString: Untagged
@@ -392,7 +399,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 815519112671166557}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.2666, y: -1.226, z: 0}
+  m_LocalPosition: {x: 5.259, y: -1.13, z: 0}
   m_LocalScale: {x: 0.6690426, y: 1.1657801, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -488,3 +495,21 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!255 &5370493449886788178
+FixedJoint2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 815519112671166557}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_EnableCollision: 0
+  m_ConnectedRigidBody: {fileID: 815519111218597529}
+  m_BreakForce: Infinity
+  m_BreakTorque: Infinity
+  m_AutoConfigureConnectedAnchor: 1
+  m_Anchor: {x: 0, y: 0}
+  m_ConnectedAnchor: {x: 0.5567855, y: -0.08075231}
+  m_DampingRatio: 0
+  m_Frequency: 0

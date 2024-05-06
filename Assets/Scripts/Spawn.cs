@@ -14,10 +14,7 @@ public class Spawn : MonoBehaviour
   
 
     void Start() {
-
-  
-
-    StartCoroutine(SpawnGameObjects());
+        StartCoroutine(SpawnGameObjects());
     }
         //randomly spawn game objects
         IEnumerator SpawnGameObjects() {
@@ -43,11 +40,14 @@ public class Spawn : MonoBehaviour
             }
 
             float randomVelocity = Random.Range(-15.0f, 15.0f);
+
+           
+            
             gameObjectToSpawn.GetComponent<Rigidbody2D>().velocity = new Vector2(randomVelocity, randomVelocity);
+            Debug.Log(randomVelocity);
 
             // Spawn the game object at the random position
             Instantiate(gameObjectToSpawn, spawnPosition, Quaternion.identity, spawnArea);
-
             // Wait for a random number of seconds between 5 and 10 before spawning the next game object
             float randomDelay = Random.Range(1.0f, 2.0f);
             yield return new WaitForSeconds(randomDelay);
@@ -56,8 +56,4 @@ public class Spawn : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-    }
 }

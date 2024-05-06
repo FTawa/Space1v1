@@ -5,4 +5,5 @@ using UnityEngine;
 public interface Event 
 {
     public void onWinnerFound();
+    
 }
